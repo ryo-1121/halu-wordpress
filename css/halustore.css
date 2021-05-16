@@ -1,0 +1,1275 @@
+    /* ----------------------------------全体---------------------------------*/
+    
+    a {
+        color: none;
+    }
+    
+    a:hover {
+        text-decoration: none;
+    }
+    
+    body {
+        background: url(<?php echo get_template_directory_uri() ?>/image/background.jpg);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+        background-color: rgba(255, 255, 255, 0.8);
+        background-blend-mode: lighten;
+    }
+    
+    body:before {
+        content: "";
+        display: block;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        width: 100%;
+        height: 100vh;
+        background: url("../image/background.jpg") center no-repeat;
+        background-color: rgba(255, 255, 255, 0.8);
+        background-size: cover;
+        background-blend-mode: lighten;
+    }
+    
+    @media (min-width:767px) {
+        body:before {
+            content: "";
+            display: block;
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: -1;
+            width: 100%;
+            height: 100vh;
+            background: url("../image/background5.jpg") center no-repeat;
+            background-color: rgba(255, 255, 255, 0.8);
+            background-size: cover;
+            background-blend-mode: lighten;
+        }
+    }
+    
+    li {
+        list-style: none;
+    }
+    
+    ul {
+        padding: 0;
+    }
+    
+    p {
+        padding: 0;
+        margin: 0;
+    }
+    /* ----------------------------------バックグランドﾍﾞｰｽ---------------------------------*/
+    
+    .main_container {
+        width: 95%;
+        margin: auto;
+    }
+    
+    @media (min-width:767px) {
+        .main_container {
+            width: 80%;
+        }
+    }
+    
+    .menu_container {
+        width: 85%;
+        margin: auto;
+    }
+    
+    @media (min-width:767px) {
+        .menu_container {
+            width: 60%;
+            margin: auto;
+        }
+    }
+    /* ----------------------------------ヘッダー ---------------------------------*/
+    
+    .head {
+        background-color: #007B40;
+        height: 45px;
+        position: fixed;
+        top: 0;
+        z-index: 99;
+    }
+    /*　ハンバーガーボタン　*/
+    
+    .hamburger {
+        display: block;
+        position: fixed;
+        z-index: 3;
+        right: 13px;
+        top: 3px;
+        width: 42px;
+        height: 42px;
+        cursor: pointer;
+        text-align: center;
+    }
+    
+    @media (min-width:767px) {
+        .hamburger {
+            display: none;
+        }
+    }
+    
+    .hamburger span {
+        display: block;
+        position: absolute;
+        width: 30px;
+        height: 2px;
+        left: 6px;
+        background: #fff;
+        -webkit-transition: 0.3s ease-in-out;
+        -moz-transition: 0.3s ease-in-out;
+        transition: 0.3s ease-in-out;
+    }
+    
+    .hamburger span:nth-child(1) {
+        top: 10px;
+    }
+    
+    .hamburger span:nth-child(2) {
+        top: 20px;
+    }
+    
+    .hamburger span:nth-child(3) {
+        top: 30px;
+    }
+    /* ナビ開いてる時のボタン */
+    
+    .hamburger.active {
+        -webkit-transition: all 0.3s ease-in-out;
+        -o-transition: all 0.3s ease-in-out;
+        transition: all 0.3s ease-in-out;
+        -webkit-transition-delay: 0.6s;
+        -o-transition-delay: 0.6s;
+        transition-delay: 0.6s;
+        -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+        -o-transform: rotate(45deg);
+        transform: rotate(45deg);
+    }
+    
+    .hamburger.active span:nth-child(2) {
+        width: 0px;
+    }
+    
+    .hamburger.active span:nth-child(1),
+    .hamburger.active span:nth-child(3) {
+        background: #fff;
+        -webkit-transition-delay: 0.3s;
+        -o-transition-delay: 0.3s;
+        transition-delay: 0.3s;
+    }
+    
+    .hamburger.active span:nth-child(1) {
+        -webkit-transform: translateY(4px);
+        -ms-transform: translateY(4px);
+        -o-transform: translateY(4px);
+        transform: translateY(4px);
+    }
+    
+    .hamburger.active span:nth-child(3) {
+        -webkit-transform: translateY(-16px) rotate(90deg);
+        -ms-transform: translateY(-16px) rotate(90deg);
+        -o-transform: translateY(-16px) rotate(90deg);
+        transform: translateY(-16px) rotate(90deg);
+    }
+    
+    nav.globalMenuSp {
+        position: fixed;
+        top: 0;
+        left: 0;
+        color: #fff;
+        background: #007B40;
+        text-align: center;
+        width: 100%;
+        display: none;
+        transition: opacity .6s ease, visibility .6s ease;
+    }
+    
+    @media (min-width:767px) {
+        nav.globalMenuSp {
+            opacity: 1;
+            display: block;
+        }
+    }
+    
+    nav.globalMenuSp ul {
+        margin: 0 auto;
+        padding: 0;
+        width: 100%;
+    }
+    
+    @media (min-width:767px) {
+        nav.globalMenuSp ul {
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+    
+    nav.globalMenuSp ul li {
+        list-style-type: none;
+        padding: 0;
+        width: 100%;
+        transition: .4s all;
+        justify-content: space-between;
+        font-family: toppan-bunkyu-midashi-go-std, sans-serif;
+    }
+    
+    nav.globalMenuSp ul li:last-child {
+        padding-bottom: 0;
+    }
+    
+    nav.globalMenuSp ul li:hover {
+        background: #ddd;
+    }
+    
+    nav.globalMenuSp ul li a {
+        display: block;
+        color: #fff;
+        padding: 1em 0;
+        text-decoration: none;
+    }
+    /* このクラスを、jQueryで付与・削除する */
+    
+    nav.globalMenuSp.active {
+        opacity: 1;
+        display: block;
+    }
+    
+    .head_logo {
+        text-align: center;
+        margin-top: 59px;
+    }
+    
+    @media (min-width:767px) {
+        .head_logo {
+            text-align: center;
+            margin-top: 100px;
+        }
+    }
+    
+    .head_logo img {
+        width: 200px;
+        display: block;
+        margin: 0 auto;
+    }
+    
+    @media (min-width:767px) {
+        .head_logo img {
+            width: 300px;
+            display: block;
+            margin: 0 auto;
+        }
+    }
+    /* ----------------------------------フッター---------------------------------*/
+    
+    footer {
+        background-color: #007B40;
+        width: 100%;
+        height: 200px;
+        margin-top: 10%;
+    }
+    
+    @media (min-width:767px) {
+        footer {
+            width: 100%;
+            height: 285px;
+            margin-top: 10%;
+        }
+    }
+    
+    .footer_logo {
+        width: 200px;
+        margin: 0 auto;
+    }
+    
+    @media (min-width:767px) {
+        .footer_logo {
+            width: 300px;
+            margin: 0 auto;
+        }
+    }
+    
+    .footer_logo img {
+        width: 100%;
+        margin-top: 7%;
+    }
+    
+    .postalcode {
+        text-align: center;
+        margin-top: 2%;
+        color: #000;
+        font-weight: bold;
+        font-family: toppan-bunkyu-midashi-go-std, sans-serif;
+        font-size: 15px;
+        text-shadow: 0 0 5px #888;
+    }
+    
+    @media (min-width:767px) {
+        .postalcode {
+            text-align: center;
+            margin-top: 2%;
+            color: #000;
+            font-weight: bold;
+            font-family: toppan-bunkyu-midashi-go-std, sans-serif;
+            font-size: 20px;
+            text-shadow: 0 0 5px #888;
+        }
+    }
+    
+    .street_address {
+        text-align: center;
+        color: #000;
+        font-weight: bold;
+        font-family: toppan-bunkyu-midashi-go-std, sans-serif;
+        font-size: 15px;
+        text-shadow: 0 0 5px #888;
+    }
+    
+    @media (min-width:767px) {
+        .street_address {
+            text-align: center;
+            color: #000;
+            font-weight: bold;
+            font-family: toppan-bunkyu-midashi-go-std, sans-serif;
+            font-size: 20px;
+            text-shadow: 0 0 5px #888;
+        }
+    }
+    
+    .phone_number {
+        color: #000;
+        text-align: center;
+        font-weight: bold;
+        font-family: toppan-bunkyu-midashi-go-std, sans-serif;
+        font-size: 15px;
+        text-shadow: 0 0 5px #888;
+    }
+    
+    .phone_number a {
+        color: black;
+    }
+    
+    @media (min-width:767px) {
+        .phone_number {
+            color: #000;
+            text-align: center;
+            font-weight: bold;
+            font-family: toppan-bunkyu-midashi-go-std, sans-serif;
+            font-size: 20px;
+            text-shadow: 0 0 5px #888;
+        }
+    }
+    
+    .inquiry {
+        text-align: center;
+        color: #000;
+        font-weight: bold;
+        font-family: toppan-bunkyu-midashi-go-std, sans-serif;
+        font-size: 15px;
+        text-shadow: 0 0 5px #888;
+    }
+    
+    .inquiry a {
+        color: #000;
+    }
+    
+    @media (min-width:767px) {
+        .inquiry {
+            text-align: center;
+            color: #000;
+            font-weight: bold;
+            font-family: toppan-bunkyu-midashi-go-std, sans-serif;
+            font-size: 20px;
+            text-shadow: 0 0 5px #888;
+        }
+    }
+    /* ----------------------------------サークルメニュー---------------------------------*/
+    
+    .circle {
+        display: block;
+    }
+    
+    @media (min-width:767px) {
+        .circle {
+            display: flex;
+        }
+    }
+    
+    .circle_menu {
+        background-color: rgba(255, 255, 255, 0.95);
+        width: 170px;
+        height: 170px;
+        margin: 0 auto;
+        line-height: 170px;
+        margin-top: 10%;
+        animation-name: fuwafuwa;
+        animation-timing-function: ease-in-out;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+        animation-duration: 1s;
+    }
+    
+    @keyframes fuwafuwa {
+        0% {
+            transform: translate(0, 0px);
+        }
+        100% {
+            transform: translate(0, -10px)
+        }
+    }
+    
+    @media (min-width:767px) {
+        .circle_menu {
+            background-color: rgba(255, 255, 255, 0.95);
+            width: 170px;
+            height: 170px;
+            margin: 0 auto;
+            line-height: 170px;
+            margin-top: 10%;
+            justify-content: space-between;
+        }
+    }
+    
+    .circle_menu p {
+        font-family: swister, sans-serif;
+        color: #007B40;
+        font-size: 28px;
+        text-shadow: 0 0 5px #888;
+    }
+    /* ----------------------------------インスタグラム/ブログ共通---------------------------------*/
+    
+    .post_contents {
+        display: block;
+        width: 100%;
+    }
+    
+    @media (min-width:767px) {
+        .post_contents {
+            display: flex;
+            width: 100%;
+            margin-top: 10%;
+            vertical-align: bottom;
+        }
+    }
+    /* ----------------------------------インスタグラム---------------------------------*/
+    
+    .instagram {
+        width: 100%;
+    }
+    
+    @media (min-width:767px) {
+        .instagram {
+            justify-content: space-between;
+            width: 50%;
+        }
+    }
+    
+    .instagram_title {
+        margin: 0 auto;
+        margin-top: 20%;
+        margin-bottom: 3%;
+        width: 45%;
+        height: 49.6px;
+        display: flex;
+    }
+    
+    @media (min-width:767px) {
+        .instagram_title {
+            margin: 0 auto;
+            margin-bottom: 3%;
+            width: 40%;
+            height: 49.6px;
+            display: flex;
+        }
+    }
+    
+    .instagram_logo {
+        width: 75%;
+        margin-right: 3%;
+        justify-content: center;
+    }
+    
+    @media (min-width:767px) {
+        .instagram_logo {
+            width: 70%;
+            margin-right: 3%;
+            margin: 0 auto;
+        }
+    }
+    
+    .instagram_icon {
+        /* width: 23%; */
+        justify-content: center;
+    }
+    
+    @media (min-width:767px) {
+        .instagram_icon {
+            /* width: 20%; */
+            height: auto;
+            margin: 0 auto;
+            padding: 1%;
+        }
+    }
+    
+    .instagram_picture {
+        border: solid 5px #007B40;
+        width: 350px;
+        height: 440px;
+        margin: 0 auto;
+        margin-top: 3%;
+        margin-bottom: 3%;
+        border-radius: 10px 60px/50px 10px;
+    }
+    
+    @media (min-width:767px) {
+        .instagram_picture {
+            border: solid 5px #007B40;
+            width: 400px;
+            height: 480px;
+            margin: 0 auto;
+            margin-top: 0;
+            margin-bottom: 0;
+            border-radius: 10px 60px/50px 10px;
+        }
+    }
+    /* ----------------------------------ブログ---------------------------------*/
+    
+    .blog {
+        justify-content: space-between;
+        margin-top: 10%;
+        width: 100%;
+    }
+    
+    @media (min-width:767px) {
+        .blog {
+            justify-content: space-between;
+            margin-top: 0;
+            width: 50%;
+        }
+    }
+    
+    .blog_title {
+        color: #111;
+        text-align: center;
+        font-family: swister, sans-serif;
+        font-size: 50px;
+        line-height: 1;
+        width: 40%;
+        margin: 0 auto;
+        margin-bottom: 3%;
+    }
+    
+    @media (min-width:767px) {
+        .blog_title {
+            color: #111;
+            font-family: swister, sans-serif;
+            ;
+            font-size: 50px;
+            line-height: 1;
+            width: 30%;
+            margin: 0 auto;
+            margin-bottom: 3%;
+        }
+    }
+    
+    .blog_article {
+        border: solid 5px #007B40;
+        width: 350px;
+        height: 440px;
+        margin: 0 auto;
+        margin-bottom: 3%;
+        border-radius: 10px 60px/50px 10px;
+    }
+    
+    @media (min-width:767px) {
+        .blog_article {
+            border: solid 5px #007B40;
+            width: 400px;
+            height: 480px;
+            margin: 0 auto;
+            margin-bottom: 0;
+            border-radius: 10px 60px/50px 10px;
+        }
+    }
+    
+    .blog_article_list {
+        display: flex;
+        width: 100%;
+        flex-wrap: wrap;
+        text-align: center;
+        margin-top: 3%;
+    }
+    
+    .blog_list {
+        width: 29.333%;
+        margin: 0 auto;
+        line-height: 1;
+        margin-bottom: 3%;
+    }
+    
+    @media (min-width:767px) {
+        .blog_list {
+            width: 29.333%;
+            margin: 0 auto;
+            line-height: 1;
+            margin-bottom: 3%;
+        }
+    }
+    
+    .blog_list img {
+        width: 100%;
+    }
+    /* ---------------------------------------------cafe menu page-----------------------------------------*/
+    /* --------------------------------menu page title-------------------------------*/
+    
+    .menupage_title {
+        display: block;
+        margin-top: 5%;
+        background-image: url(../image/menu_top_image.png);
+        background-size: 100%;
+        width: 100%;
+        height: 20%;
+        text-align: center;
+        text-shadow: 0 0 5px #888;
+    }
+    
+    .menupage_title p {
+        font-family: toppan-bunkyu-midashi-go-std, sans-serif;
+        color: #fff;
+        font-size: 26px;
+        font-weight: bold;
+        margin: 0 auto;
+        text-shadow: 0 0 5px #888;
+    }
+    /* --------------------------------pickup menu-------------------------------*/
+    
+    .pickup_menu {
+        margin-top: 10%;
+    }
+    
+    .pickup_menu h2 {
+        color: #fff;
+        font-size: 5vw;
+        font-family: toppan-bunkyu-midashi-go-std, sans-serif;
+        background-image: url(../image/menu_back_image.png);
+        background-repeat: no-repeat;
+        background-size: 45%;
+        margin-left: 1%;
+        padding-left: 2%;
+        text-shadow: 0 0 5px #888;
+    }
+    
+    @media (min-width:767px) {
+        .pickup_menu h2 {
+            color: #fff;
+            font-size: 3vw;
+            font-family: toppan-bunkyu-midashi-go-std, sans-serif;
+            background-image: url(../image/menu_back_image.png);
+            background-repeat: no-repeat;
+            background-size: 45%;
+            padding-left: 1%;
+            text-shadow: 0 0 5px #888;
+        }
+    }
+    
+    .pickup_menu_left_pic {
+        width: 100%;
+        text-align: center;
+    }
+    
+    .pickup_menu_right {
+        background-image: url(../image/pickup_menu_concept.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+        width: 84.81vw;
+        height: 60vw;
+        margin: 0 auto;
+        margin-top: -3%;
+        text-shadow: 0 0 5px #888;
+    }
+    
+    @media (min-width:767px) {
+        .pickup_menu_right {
+            left: -4%;
+            margin-top: 23%;
+            background-image: url(../image/pickup_menu_concept.svg);
+            background-repeat: no-repeat;
+            background-size: contain;
+            width: 35vw;
+            height: 22vw;
+            text-shadow: 0 0 5px #888;
+            transform: rotate(-9deg);
+            /* バックグラウンドイメージの傾き指定*/
+            -ms-transform: rotate(-9deg);
+            /* バックグラウンドイメージの傾き指定*/
+            -moz-transform: rotate(-9deg);
+            /* バックグラウンドイメージの傾き指定*/
+            -webkit-transform: rotate(-9deg);
+            /* バックグラウンドイメージの傾き指定*/
+            -o-transform: rotate(-9deg);
+            /* バックグラウンドイメージの傾き指定*/
+            z-index: 99;
+        }
+    }
+    
+    .pickup_menu_right p {
+        padding: 18% 5% 5% 5%;
+        font-size: 3vw;
+        width: 77vw;
+        left: 50%;
+    }
+    
+    @media (min-width:767px) {
+        .pickup_menu_right p {
+            padding: 18% 5% 5% 5%;
+            font-size: 1.2vw;
+            width: 25vw;
+        }
+    }
+    /* --------------------------------drink menu-------------------------------*/
+    
+    .drink_title {
+        margin-top: 8%;
+        width: 100%;
+        background-image: url(../image/menu_back_image.png);
+        background-repeat: no-repeat;
+        background-size: 100%;
+    }
+    
+    @media (min-width:750px) {
+        .drink_title {
+            margin-top: 10%;
+            background-image: url(../image/menu_back_image.png);
+            background-repeat: no-repeat;
+            background-size: 100%;
+        }
+    }
+    
+    .drink_title p {
+        margin: 0;
+        padding-top: 1%;
+        text-align: center;
+        color: #fff;
+        font-family: toppan-bunkyu-midashi-go-std, sans-serif;
+        font-size: 1.8rem;
+        line-height: 2rem;
+    }
+    
+    .menu_drink_list {
+        display: flex;
+        margin-top: 5%;
+        width: 100%;
+        flex-wrap: wrap;
+    }
+    
+    .menu_drink_list_box {
+        width: 50%;
+        justify-content: space-between;
+        line-height: 1;
+        text-align: center;
+        font-family: toppan-bunkyu-midashi-go-std, sans-serif;
+        text-shadow: 0 0 5px #888;
+    }
+    
+    @media (min-width:767px) {
+        .menu_drink_list_box {
+            width: 25%;
+            justify-content: space-between;
+            line-height: 1;
+            text-align: center;
+            font-family: toppan-bunkyu-midashi-go-std, sans-serif;
+            text-shadow: 0 0 5px #888;
+        }
+    }
+    
+    .menu_drink_list_box img {
+        width: 100%;
+    }
+    /* --------------------------------food menu-------------------------------*/
+    
+    .food_title {
+        margin-top: 8%;
+        width: 100%;
+        background-image: url(../image/menu_back_image.png);
+        background-repeat: no-repeat;
+        background-size: 100%;
+    }
+    
+    @media (min-width:750px) {
+        .food_title {
+            margin-top: 10%;
+            background-image: url(../image/menu_back_image.png);
+            background-repeat: no-repeat;
+            background-size: 100%;
+        }
+    }
+    
+    .food_title p {
+        margin: 0;
+        padding-top: 1%;
+        text-align: center;
+        color: #fff;
+        font-family: toppan-bunkyu-midashi-go-std, sans-serif;
+        font-size: 1.8rem;
+        line-height: 2rem;
+    }
+    
+    .menu_food_list {
+        display: flex;
+        margin-top: 5%;
+        width: 100%;
+        flex-wrap: wrap;
+    }
+    
+    .menu_food_list_box {
+        width: 50%;
+        justify-content: space-between;
+        line-height: 1;
+        text-align: center;
+        font-family: toppan-bunkyu-midashi-go-std, sans-serif;
+        text-shadow: 0 0 5px #888;
+    }
+    
+    @media (min-width:767px) {
+        .menu_food_list_box {
+            width: 25%;
+            justify-content: space-between;
+            line-height: 1;
+            text-align: center;
+            font-family: toppan-bunkyu-midashi-go-std, sans-serif;
+            text-shadow: 0 0 5px #888;
+        }
+    }
+    
+    .menu_food_list_box img {
+        width: 100%;
+    }
+    /* --------------------------------access page title-------------------------------*/
+    
+    .accesspage_title {
+        display: block;
+        margin-top: 5%;
+        background-image: url(../image/menu_top_image.png);
+        background-size: 100%;
+        width: 100%;
+        height: 20%;
+        text-align: center;
+    }
+    
+    .accesspage_title p {
+        font-family: toppan-bunkyu-midashi-go-std, sans-serif;
+        color: #fff;
+        font-size: 26px;
+        font-weight: bold;
+        margin: 0 auto;
+    }
+    /* ---------------------------------------アクセスページ店舗案内--------------------------------------*/
+    
+    .accesspage_cont {
+        margin-top: 8%;
+        display: block;
+    }
+    
+    @media (min-width:767px) {
+        .accesspage_cont {
+            margin-top: 8%;
+            display: flex;
+        }
+    }
+    
+    .accesspage_cont img {
+        width: 100%;
+    }
+    
+    @media (min-width:767px) {
+        .accesspage_cont img {
+            width: 70%;
+        }
+    }
+    
+    .accesspage_cont a {
+        color: #59392b;
+    }
+    
+    .accesspage_overview {
+        line-height: 1;
+        width: 100%;
+        height: auto;
+    }
+    
+    .number_shats {
+        color: #59392b;
+        font-family: toppan-bunkyu-midashi-go-std, sans-serif;
+        font-style: normal;
+        font-weight: 900;
+        font-size: 5.5vw;
+        margin-top: 5%;
+        text-align: center;
+        text-shadow: 0 0 5px #888;
+    }
+    
+    @media (min-width:767px) {
+        .number_shats {
+            color: #59392b;
+            font-family: toppan-bunkyu-midashi-go-std, sans-serif;
+            font-style: normal;
+            font-weight: 900;
+            font-size: 2vw;
+            margin-top: 0%;
+            text-align: left;
+            text-shadow: 0 0 5px #888;
+        }
+    }
+    
+    .accesspage_street_address {
+        color: #59392b;
+        font-family: toppan-bunkyu-midashi-go-std, sans-serif;
+        font-style: normal;
+        font-weight: 900;
+        font-size: 4vw;
+        margin-top: 5%;
+        text-align: center;
+        text-shadow: 0 0 5px #888;
+    }
+    
+    @media (min-width:767px) {
+        .accesspage_street_address {
+            color: #59392b;
+            font-family: toppan-bunkyu-midashi-go-std, sans-serif;
+            font-style: normal;
+            font-weight: 900;
+            font-size: 1.3vw;
+            margin-top: 2%;
+            text-align: left;
+            text-shadow: 0 0 5px #888;
+        }
+    }
+    
+    .accesspage_phonenumber {
+        color: #59392b;
+        font-family: toppan-bunkyu-midashi-go-std, sans-serif;
+        font-style: normal;
+        font-weight: 900;
+        font-size: 4vw;
+        margin-top: 5%;
+        text-align: center;
+        text-shadow: 0 0 5px #888;
+    }
+    
+    @media (min-width:767px) {
+        .accesspage_phonenumber {
+            color: #59392b;
+            font-family: toppan-bunkyu-midashi-go-std, sans-serif;
+            font-style: normal;
+            font-weight: 900;
+            font-size: 1.3vw;
+            margin-top: 2%;
+            text-align: left;
+            text-shadow: 0 0 5px #888;
+        }
+    }
+    
+    .accesspage_buisinesshours {
+        color: #59392b;
+        font-family: toppan-bunkyu-midashi-go-std, sans-serif;
+        font-style: normal;
+        font-weight: 900;
+        font-size: 4vw;
+        margin-top: 5%;
+        text-align: center;
+        text-shadow: 0 0 5px #888;
+    }
+    
+    @media (min-width:767px) {
+        .accesspage_buisinesshours {
+            color: #59392b;
+            font-family: toppan-bunkyu-midashi-go-std, sans-serif;
+            font-style: normal;
+            font-weight: 900;
+            font-size: 1.3vw;
+            margin-top: 2%;
+            text-align: left;
+            text-shadow: 0 0 5px #888;
+        }
+    }
+    
+    .mapimage {
+        margin-top: 10%;
+    }
+    
+    @media (min-width:767px) {
+        .mapimage {
+            margin-top: 25%;
+        }
+    }
+    /* ---------------------------------------レンタサイクル--------------------------------------*/
+    
+    .guide {
+        display: block;
+    }
+    
+    @media (min-width:767px) {
+        .guide {
+            display: flex;
+            width: 100%;
+            height: 30vw;
+        }
+    }
+    
+    .bicycle {
+        display: flex;
+        width: 100%;
+        margin-top: 15%;
+    }
+    
+    @media (min-width:767px) {
+        .bicycle {
+            display: flex;
+            width: 50%;
+            margin-top: 10%;
+        }
+    }
+    
+    .bicycle_image {
+        width: 50%;
+        justify-content: space-between;
+    }
+    
+    .bicycle_image img {
+        width: 100%;
+    }
+    
+    .bicycle_guide {
+        width: 50%;
+        font-size: 3.2vw;
+        font-weight: 900;
+        justify-content: space-between;
+        margin-left: 3%;
+        color: #59392b;
+        text-shadow: 0 0 5px #888;
+    }
+    
+    @media (min-width:767px) {
+        .bicycle_guide {
+            width: 50%;
+            font-size: 1.3vw;
+            font-weight: 900;
+            justify-content: space-between;
+            margin-left: 3%;
+            color: #59392b;
+            text-shadow: 0 0 5px #888;
+        }
+    }
+    
+    .bicycle_guide a {
+        color: #007B40;
+    }
+    /* ---------------------------------------ウーバーイーツ--------------------------------------*/
+    
+    .ubereats {
+        width: 100%;
+        margin-top: 15%;
+    }
+    
+    @media (min-width:767px) {
+        .ubereats {
+            width: 50%;
+            margin-top: 10%;
+            margin-left: 5%;
+            justify-content: space-between;
+        }
+    }
+    
+    .ubereats_icon img {
+        width: 100%;
+        margin-bottom: 2%;
+    }
+    
+    .ubereats_app {
+        width: 100%;
+        display: flex;
+    }
+    
+    .ubereats_app img {
+        width: 100%;
+    }
+    
+    .ubereats_app_txt {
+        width: 39%;
+        margin-right: 3%;
+        font-family: toppan-bunkyu-midashi-go-std, sans-serif;
+        font-weight: 900;
+        line-height: 1.2;
+        font-size: 3vw;
+        padding-top: 3%;
+        text-shadow: 0 0 5px #888;
+    }
+    
+    @media (min-width:767px) {
+        .ubereats_app_txt {
+            width: 39%;
+            margin-right: 3%;
+            font-family: toppan-bunkyu-midashi-go-std, sans-serif;
+            font-weight: 900;
+            line-height: 1.2;
+            font-size: 1.2vw;
+            padding-top: 3%;
+            text-shadow: 0 0 5px #888;
+        }
+    }
+    
+    .ubereats_app_icon {
+        width: 14%;
+        margin-right: 3%;
+    }
+    
+    .ubereats_qr {
+        width: 14%;
+        margin-right: 3%;
+    }
+    
+    .ubereats_download {
+        width: 23%;
+    }
+    /* ---------------------------------------お問い合わせ--------------------------------------*/
+    
+    body {
+        font-family: 'Source Sans Pro', sans-serif;
+        background: #007B40;
+        ;
+    }
+    
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    
+    textarea:focus,
+    input:focus {
+        outline: none;
+    }
+    
+    ul li {
+        list-style: none;
+    }
+    
+    h1 {
+        font-weight: 800;
+        text-transform: uppercase;
+        color: #007B40;
+        font-size: 32px;
+        width: 200px;
+        text-align: center;
+        margin: 30px 100px;
+    }
+    
+    ul {
+        display: inline-block;
+        margin-top: 10%;
+    }
+    
+    #contact {
+        background: #fff;
+        position: relative;
+        width: 400px;
+        margin: 0 auto;
+        box-shadow: 0 10px 20px rgba(0, 0, 0, .1)
+    }
+    
+    .js #contact {
+        position: absolute;
+        top: 9em;
+        display: none;
+        left: 0;
+        right: 0;
+        z-index: 999;
+    }
+    
+    @media (min-width:767px) {
+        .js #contact {
+            position: absolute;
+            top: 6em;
+            display: none;
+            left: 0;
+            right: 0;
+        }
+    }
+    
+    input {
+        border: 0;
+        margin: 1em 40px;
+        width: 300px;
+        padding: 10px;
+        border-bottom: 2px solid #007B40;
+        background: none;
+        font-family: 'Fontawesome', 'Source Sans Pro', sans-serif;
+        display: block;
+        color: #007B40;
+    }
+    
+    textarea {
+        border: 0;
+        width: 300px;
+        height: 100px;
+        display: block;
+        margin-left: 40px;
+        background: none;
+        padding: 10px;
+        font-family: 'Fontawesome', 'Source Sans Pro', sans-serif;
+        border-bottom: 2px solid #007B40;
+        color: #007B40;
+    }
+    
+    #submit {
+        margin: 3em auto 4em;
+        border: 2px solid #007B40;
+        color: #007B40;
+    }
+    
+    #submit:hover {
+        color: #fff
+    }
+    
+    .btn {
+        background: none;
+        border: 2px solid #252525;
+        box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+        margin: 19em auto;
+        padding: 1.2em 2em;
+        color: #212121;
+        font-family: 'Open Sans';
+        font-size: 12px;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        font-weight: 600;
+        cursor: pointer;
+        transition: ease all .3s;
+        display: block;
+    }
+    
+    .btn:hover {
+        background: #007B40;
+        color: #fff;
+        border: #007B40 solid 2px;
+    }
+    
+    .btn:active {
+        background: #007B40;
+        color: #fff;
+        border: #007B40 solid 2px;
+    }
+    
+    .close {
+        position: absolute;
+        right: 20px;
+        top: -10px;
+        cursor: pointer;
+        font-weight: 400;
+        font-size: 3em;
+        color: #ee4444;
+    }
