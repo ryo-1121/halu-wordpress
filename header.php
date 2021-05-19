@@ -33,22 +33,24 @@
 <body>
   <!------------------------------- ヘッダー -------------------------------------->
   <header>
-    <div class="head w-100">
-      <div class="hamburger">
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
+        <div class="head w-100">
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
 
-      <nav class="globalMenuSp">
-        <ul>
-          <li><a href="index.html">TOP</a></li>
-          <li><a href="menu_page.html">CAFE MENU</a></li>
-          <li><a href="#">FASHION</a></li>
-          <li><a href="accesspage.html">ACCESS</a></li>
-          <li><a href="contactpage.html">CONTACT</a></li>
-        </ul>
-      </nav>
-    </div>
-    <div class="head_logo"><img src="image/logo.png" alt=""></div>
-  </header>
+            <nav class="globalMenuSp">
+                <ul>
+                    <li><a href="<?php echo get_template_directory_uri() ?>/index.php">TOP</a></li>
+                    <li><a href="<?php echo get_template_directory_uri() ?>/page-menu.php">CAFE MENU</a></li>
+                    <li><a href="<?php echo get_template_directory_uri() ?>/page-blog.php">BLOG</a></li>
+                    <li><a href="<?php echo get_template_directory_uri() ?>/#">FASHION</a></li>
+                    <li><a href="<?php echo get_template_directory_uri() ?>/page-access.php">ACCESS</a></li>
+                    <li><a href="<?php echo get_template_directory_uri() ?>/page-contactpage.php">CONTACT</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="head_logo"><img src="image/logo.png" alt=""></div>
+    </header>
+
