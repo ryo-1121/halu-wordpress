@@ -1,3 +1,9 @@
+<?php
+/*
+Template Name: アクセスページ
+*/
+?>
+
 <?php get_header(); ?>
 
     <!-------------------------------- アクセスページトップ ----------------------------------->
@@ -11,7 +17,7 @@
 
         <!-------------------------------- アクセスページ店舗案内 ----------------------------------->
         <div class="accesspage_cont">
-            <img clas="accesspage_pic col-md-7" src="image/access_image.jpg" alt="">
+            <img clas="accesspage_pic col-md-7" src="<?php echo get_template_directory_uri() ?>/image/access_image.jpg" alt="">
             <div class="accesspage_overview col-md-5">
                 <p class="number_shats">座席数30席(Wi-fi有り)</p>
                 <p class="accesspage_street_address">福岡県筑紫野市原 166-25</p>
@@ -19,7 +25,7 @@
                     <p class="accesspage_phonenumber">電話番号:090-3669-4700</p>
                 </a>
                 <p class="accesspage_buisinesshours">営業時間:11:00～19:00</p>
-                <img class="mapimage" src="image/mapimage.svg" alt="">
+                <img class="mapimage" src="<?php echo get_template_directory_uri() ?>/image/mapimage.svg" alt="">
             </div>
         </div>
 
@@ -28,7 +34,7 @@
         <div class="guide">
             <div class="bicycle">
                 <div class="bicycle_image">
-                    <img src="image/bicycle.png" alt="">
+                    <img src="<?php echo get_template_directory_uri() ?>/image/bicycle.png" alt="">
                 </div>
                 <div class="bicycle_guide">
                     <p>西鉄大宰府駅にてレンタサイクルを１日５００円 でご利用できますので、大宰府観光や当店への ご来店の際にご利用ください。 お問い合わせなど、詳しくは太宰府市観光情報ページをご覧ください。<br>
@@ -41,13 +47,13 @@
 
             <div class="ubereats">
                 <div class="ubereats_icon">
-                    <img src="image/uber_bnn.png" alt="">
+                    <img src="<?php echo get_template_directory_uri() ?>/image/uber_bnn.png" alt="">
                 </div>
                 <ul class="ubereats_app">
                     <li class="ubereats_app_txt">ご注文は<br>Uber Eatsアプリから</li>
-                    <li class="ubereats_app_icon"><img src="image/uber_app.svg" alt=""></li>
-                    <li class="ubereats_qr"><img src="image/uber_qr.png" alt=""></li>
-                    <li class="ubereats_download"><img src="image/Download_on_the_App_Store_Badge_US-UK_RGB_blk_092917.svg" alt=""><img src="image/google-play-badge.png" alt=""></li>
+                    <li class="ubereats_app_icon"><img src="<?php echo get_template_directory_uri() ?>/image/uber_app.svg" alt=""></li>
+                    <li class="ubereats_qr"><img src="<?php echo get_template_directory_uri() ?>/image/uber_qr.png" alt=""></li>
+                    <li class="ubereats_download"><img src="<?php echo get_template_directory_uri() ?>/image/Download_on_the_App_Store_Badge_US-UK_RGB_blk_092917.svg" alt=""><img src="image/google-play-badge.png" alt=""></li>
 
                 </ul>
             </div>

@@ -13,7 +13,6 @@
   <link rel="stylesheet" href="https://use.typekit.net/bsy2knc.css">
 
   <!-- jquery -->
-  <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> -->
   <?php
   wp_deregister_script('jquery');
   wp_enqueue_script('jquery', 'https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js', array(), '3.3.1');
@@ -42,15 +41,15 @@
 
             <nav class="globalMenuSp">
                 <ul>
-                    <li><a href="<?php echo get_template_directory_uri() ?>/index.php">TOP</a></li>
-                    <li><a href="<?php echo get_template_directory_uri() ?>/page-menu.php">CAFE MENU</a></li>
-                    <li><a href="<?php echo get_template_directory_uri() ?>/page-blog.php">BLOG</a></li>
+                    <li><a href="top">TOP</a></li>
+                    <li><a href="cafe-menu">CAFE MENU</a></li>
+                    <li><a href="blogarchive">BLOG</a></li>
                     <li><a href="<?php echo get_template_directory_uri() ?>/#">FASHION</a></li>
-                    <li><a href="<?php echo get_template_directory_uri() ?>/page-access.php">ACCESS</a></li>
-                    <li><a href="<?php echo get_template_directory_uri() ?>/page-contactpage.php">CONTACT</a></li>
+                    <li><a href="access">ACCESS</a></li>
+                    <li><a href="contact">CONTACT</a></li>
                 </ul>
             </nav>
         </div>
-        <div class="head_logo"><img src="image/logo.png" alt=""></div>
+        <div class="head_logo"><img src="<?php echo get_template_directory_uri() ?>/image/logo.png" alt=""></div>
     </header>
 

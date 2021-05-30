@@ -645,6 +645,34 @@ footer {
     width: 100%;
 }
 
+.top_blog {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 2%;
+}
+
+.top_blog a {
+    color: #252525;
+}
+
+.top_blog li {
+    margin: 0;
+    width: 33.33333333%;
+}
+
+.top_blog img {
+    width: 90px;
+}
+
+@media (min-width:767px) {
+    .top_blog img {
+        width: 110px;
+    }
+}
+
 
 /* ---------------------------------------------cafe menu page-----------------------------------------*/
 
@@ -1406,6 +1434,14 @@ textarea {
     }
 }
 
+.blog_thumbnail {
+    width: 70%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 10%;
+}
+
 
 /* ---------------------------------------blogアーカイブ--------------------------------------*/
 
@@ -1440,24 +1476,24 @@ textarea {
     }
 }
 
-.archive_list {
+.archive ul {
     font-size: 3vw;
     margin-top: 1%;
 }
 
 @media (min-width:767px) {
-    .archive_list {
-        font-size: 0.7vw;
+    .archive ul {
+        font-size: 0.9vw;
         margin-top: 1%;
     }
 }
 
-.archive_list li {
+.archive li {
     margin-top: 4%;
     border-bottom: 0.3px dimgray solid;
 }
 
-.archive_list a {
+.archive a {
     color: dimgray;
 }
 
@@ -1484,4 +1520,75 @@ textarea {
         margin: 0 auto;
         display: block;
     }
+}
+
+
+/* ---------------------------------------blog アーカイブTOP--------------------------------------*/
+
+.blogarchive_list {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.blogarchive_list_cont {
+    margin-top: 10%;
+    width: 50%;
+    background-image: url("../image/blogarchive-background.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-blend-mode: lighten;
+    line-height: 1;
+}
+
+@media (min-width:767px) {
+    .blogarchive_list_cont {
+        width: 25%;
+        background-image: url("../image/blogarchive-background.png");
+        background-size: contain;
+        background-blend-mode: lighten;
+        background-repeat: no-repeat;
+        line-height: 1;
+    }
+}
+
+.blogarchive_list_cont:hover img {
+    -webkit-transform: rotate(0) scale(1.2);
+    transform: rotate(0) scale(1.2);
+}
+
+.blogarchive_list_cont img {
+    display: block;
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 13%;
+    -webkit-transform: rotate(10deg) scale(1);
+    transform: rotate(8deg) scale(1);
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+}
+
+.blogarchive_list_title {
+    margin-top: 10%;
+    margin-left: 4%;
+    font-family: toppan-bunkyu-midashi-go-std, sans-serif;
+    font-size: 3.5vw;
+}
+
+@media (min-width:767px) {
+    .blogarchive_list_title {
+        margin-top: 15%;
+        margin-left: 4%;
+        font-family: toppan-bunkyu-midashi-go-std, sans-serif;
+        font-size: 1.3vw;
+    }
+}
+
+.blogarchive_list_cont p {
+    margin-top: 4%;
+    margin-left: 4%;
+}
+
+.blogarchive_list_cont a {
+    color: #252525;
 }

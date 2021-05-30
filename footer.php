@@ -13,7 +13,7 @@
     </a>
   </div>
   <div class="inquiry">
-    <a href="contactpage.html">
+    <a href="contact">
       <p></p>お問い合わせ</p>
     </a>
   </div>

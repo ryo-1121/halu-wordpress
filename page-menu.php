@@ -2,8 +2,6 @@
 /*
 Template Name: メニュー
 */
-
-require("../../../../public/wp-includes/");
 ?>
 
 
@@ -22,7 +20,7 @@ require("../../../../public/wp-includes/");
         <div class="pickup_menu row">
             <div class="pickup_menu_left col-md-8">
                 <h2>Pick up Menu</h2>
-                <img class="pickup_menu_left_pic" src="image/hotchoco.jpg " alt=" ">
+                <img class="pickup_menu_left_pic" src="<?php echo get_template_directory_uri() ?>/image/hotchoco.jpg " alt=" ">
             </div>
             <div class="pickup_menu_right col-md-4">
                 <p>コーヒー豆はペルー産のオーガニックを使用。ペルー産のオーガニックの特徴として、 ほかの有機産地では使えないグアノという肥料を使用しています。 グアノはおいしさに直結する窒素成分が非常に多く、 味は心地よい甘い香りのするまろやかなコクの余韻があるコーヒーです。
@@ -43,7 +41,7 @@ require("../../../../public/wp-includes/");
         <div class="menu_drink_cont">
             <ul class="menu_drink_list">
                 <li class="menu_drink_list_box">
-                    <img src="image/CafeLatte.png" alt="">
+                    <img src="<?php echo get_template_directory_uri() ?>/image/CafeLatte.png" alt="">
                     <div class="drink_name">
                         <p>カフェ・ラテ</p>
                     </div>
@@ -57,7 +55,7 @@ require("../../../../public/wp-includes/");
                     </div>
                 </li>
                 <li class="menu_drink_list_box">
-                    <img src="image/CafeMocha.png" alt="">
+                    <img src="<?php echo get_template_directory_uri() ?>/image/CafeMocha.png" alt="">
                     <div class="drink_name">
                         <p>カフェ・モカ</p>
                     </div>
@@ -71,7 +69,7 @@ require("../../../../public/wp-includes/");
                     </div>
                 </li>
                 <li class="menu_drink_list_box">
-                    <img src="image/CaramelLatte.png" alt="">
+                    <img src="<?php echo get_template_directory_uri() ?>/image/CaramelLatte.png" alt="">
                     <div class="drink_name">
                         <p>キャラメル・ラテ</p>
                     </div>
@@ -85,7 +83,7 @@ require("../../../../public/wp-includes/");
                     </div>
                 </li>
                 <li class="menu_drink_list_box">
-                    <img src="image/FreshLemonRooibos.png" alt="">
+                    <img src="<?php echo get_template_directory_uri() ?>/image/FreshLemonRooibos.png" alt="">
                     <div class="drink_name">
                         <p>レモンルイボスティー</p>
                     </div>
@@ -99,7 +97,7 @@ require("../../../../public/wp-includes/");
                     </div>
                 </li>
                 <li class="menu_drink_list_box">
-                    <img src="image/FreshOrangeRooibos.png" alt="">
+                    <img src="<?php echo get_template_directory_uri() ?>/image/FreshOrangeRooibos.png" alt="">
                     <div class="drink_name">
                         <p>オレンジルイボスティー</p>
                     </div>
@@ -113,7 +111,7 @@ require("../../../../public/wp-includes/");
                     </div>
                 </li>
                 <li class="menu_drink_list_box">
-                    <img src="image/MatchaLatte.png" alt="">
+                    <img src="<?php echo get_template_directory_uri() ?>/image/MatchaLatte.png" alt="">
                     <div class="drink_name">
                         <p>抹茶ラテ</p>
                     </div>
@@ -127,7 +125,7 @@ require("../../../../public/wp-includes/");
                     </div>
                 </li>
                 <li class="menu_drink_list_box">
-                    <img src="image/OrganicCoffee.png" alt="">
+                    <img src="<?php echo get_template_directory_uri() ?>/image/OrganicCoffee.png" alt="">
                     <div class="drink_name">
                         <p>オリジナルコーヒー</p>
                     </div>
@@ -141,7 +139,7 @@ require("../../../../public/wp-includes/");
                     </div>
                 </li>
                 <li class="menu_drink_list_box">
-                    <img src="image/VanillaLatte.png" alt="">
+                    <img src="<?php echo get_template_directory_uri() ?>/image/VanillaLatte.png" alt="">
                     <div class="drink_name">
                         <p>バニラ・ラテ</p>
                     </div>
@@ -165,7 +163,7 @@ require("../../../../public/wp-includes/");
         <div class="menu_food_cont">
             <ul class="menu_food_list">
                 <li class="menu_food_list_box">
-                    <img src="image/ChocolateHigh.png" alt="">
+                    <img src="<?php echo get_template_directory_uri() ?>/image/ChocolateHigh.png" alt="">
                     <div class="food_name">
                         <p>チョコレートハイ</p>
                     </div>
@@ -177,7 +175,7 @@ require("../../../../public/wp-includes/");
                     </div>
                 </li>
                 <li class="menu_food_list_box">
-                    <img src="image/CrazyHotChocolate.png" alt="">
+                    <img src="<?php echo get_template_directory_uri() ?>/image/CrazyHotChocolate.png" alt="">
                     <div class="food_name">
                         <p>クレイジーホットチョコ</p>
                     </div>
@@ -189,7 +187,7 @@ require("../../../../public/wp-includes/");
                     </div>
                 </li>
                 <li class="menu_food_list_box">
-                    <img src="image/SalmonCreamcheese.png" alt="">
+                    <img src="<?php echo get_template_directory_uri() ?>/image/SalmonCreamcheese.png" alt="">
                     <div class="drink_name">
                         <p>サーモンクリームチーズ</p>
                     </div>
@@ -201,7 +199,7 @@ require("../../../../public/wp-includes/");
                     </div>
                 </li>
                 <li class="menu_food_list_box">
-                    <img src="image/JamonSerranoEgg.png" alt="">
+                    <img src="<?php echo get_template_directory_uri() ?>/image/JamonSerranoEgg.png" alt="">
                     <div class="food_name">
                         <p>生ハムエッグ</p>
                     </div>

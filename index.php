@@ -1,3 +1,10 @@
+<?php
+/*
+Template Name: トップページ
+*/
+?>
+
+
 <?php get_header(); ?>
 
 
@@ -12,7 +19,7 @@
         </a></label>
     </div>
     <div class="circle_menu text-center rounded-circle">
-      <label><a href="<?php echo get_template_directory_uri() ?>/page-menu.php">
+      <label><a href="cafe-menu">
           <p>cafe menu</p>
         </a></label>
     </div>
@@ -29,50 +36,38 @@
         <img class="instagram_logo" src="<?php echo get_template_directory_uri() ?>/image/instagram.svg" alt="">
         <img class="instagram_icon" src="<?php echo get_template_directory_uri() ?>/image/Instagram_logo.svg" alt="">
       </div>
-      <div class="instagram_picture"></div>
+      <div class="instagram_picture"><?php echo do_shortcode('[instagram-feed]') ?> </div>
     </div>
     <!-------------------------------- ブログ ----------------------------------->
     <div class="blog">
       <div class="blog_title">BLOG</div>
       <div class="blog_article">
-        <ul class="blog_article_list">
-          <li class="blog_list"><img src="<?php echo get_template_directory_uri() ?>/image/background4.jpg">
-            <p>2021-0505</p>
-            <p>記事タイトル</p>
-          </li>
-          <li class="blog_list"><img src="<?php echo get_template_directory_uri() ?>/image/background4.jpg">
-            <p>2021-0505</p>
-            <p>記事タイトル</p>
-          </li>
-          <li class="blog_list"><img src="<?php echo get_template_directory_uri() ?>/image/background4.jpg">
-            <p>2021-0505</p>
-            <p>記事タイトル</p>
-          </li>
-          <li class="blog_list"><img src="<?php echo get_template_directory_uri() ?>/image/background4.jpg">
-            <p>2021-0505</p>
-            <p>記事タイトル</p>
-          </li>
-          <li class="blog_list"><img src="<?php echo get_template_directory_uri() ?>/image/background4.jpg">
-            <p>2021-0505</p>
-            <p>記事タイトル</p>
-          </li>
-          <li class="blog_list"><img src="<?php echo get_template_directory_uri() ?>/image/background4.jpg">
-            <p>2021-0505</p>
-            <p>記事タイトル</p>
-          </li>
-          <li class="blog_list"><img src="<?php echo get_template_directory_uri() ?>/image/background4.jpg">
-            <p>2021-0505</p>
-            <p>記事タイトル</p>
-          </li>
-          <li class="blog_list"><img src="<?php echo get_template_directory_uri() ?>/image/background4.jpg">
-            <p>2021-0505</p>
-            <p>記事タイトル</p>
-          </li>
-          <li class="blog_list"><img src="<?php echo get_template_directory_uri() ?>/image/background4.jpg">
-            <p>2021-0505</p>
-            <p>記事タイトル</p>
-          </li>
-        </ul>
+      <?php
+        $args = array(
+          'numberposts'  => 9
+        );
+        $my_posts = get_posts($args);
+
+        if (!empty($my_posts)) {
+          $output = '<ul class="top_blog">';
+          foreach ($my_posts as $p) {
+            $output .= '<li><a href="' . get_permalink($p->ID) . '">';
+            $img_id = get_post_thumbnail_id($p);
+            if ($img_id) {
+              $img_URL = wp_get_attachment_image_src($img_id);
+              $output .= '<img src=' . $img_URL[0] . '>';
+            } else {
+              $output .= '<img src=' . get_template_directory_uri() . '/image/Instagram_logo.svg>';
+            }
+            $output .= '<p>' . get_the_date('', $p) . '<br>';
+            $output .= $p->post_title;
+            $output .= '</p></a></li>';
+          }
+          $output .= '</ul>';
+        }
+        echo $output;
+        ?>
+        
       </div>
     </div>
 
