@@ -673,6 +673,16 @@ footer {
     }
 }
 
+.top_blog p {
+    display: block;
+    width: 110px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    margin: 0 auto;
+    font-family: toppan-bunkyu-midashi-go-std, sans-serif;
+}
+
 
 /* ---------------------------------------------cafe menu page-----------------------------------------*/
 
@@ -1526,12 +1536,12 @@ textarea {
 /* ---------------------------------------blog アーカイブTOP--------------------------------------*/
 
 .blogarchive_list {
-    display: flex;
     width: 100%;
-    flex-wrap: wrap;
 }
 
 .blogarchive_list_cont {
+    display: flex;
+    flex-wrap: wrap;
     margin-top: 10%;
     width: 50%;
     background-image: url("../image/blogarchive-background.png");
@@ -1543,6 +1553,8 @@ textarea {
 
 @media (min-width:767px) {
     .blogarchive_list_cont {
+        display: flex;
+        flex-wrap: wrap;
         width: 25%;
         background-image: url("../image/blogarchive-background.png");
         background-size: contain;
@@ -1569,15 +1581,14 @@ textarea {
 }
 
 .blogarchive_list_title {
-    margin-top: 10%;
-    margin-left: 4%;
+    margin-top: 10% 0 0 4%;
     font-family: toppan-bunkyu-midashi-go-std, sans-serif;
     font-size: 3.5vw;
 }
 
 @media (min-width:767px) {
     .blogarchive_list_title {
-        margin-top: 15%;
+        margin-top: 11%;
         margin-left: 4%;
         font-family: toppan-bunkyu-midashi-go-std, sans-serif;
         font-size: 1.3vw;
@@ -1585,8 +1596,7 @@ textarea {
 }
 
 .blogarchive_list_cont p {
-    margin-top: 4%;
-    margin-left: 4%;
+    margin: 4% 0 5% 4%;
 }
 
 .blogarchive_list_cont a {
