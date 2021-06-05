@@ -17,3 +17,49 @@ function sample_widgets()
   ));
 }
 add_action('widgets_init', 'sample_widgets');
+
+/ カスタム投稿タイプの追加
+add_action('init', 'create_post_type');
+function create_post_type()
+{
+  register_post_type(
+    'cafe_menu', // 投稿タイプ名の定義
+    array(
+      'labels' => array(
+        'name' => 'カフェメニュー', // 表示する投稿タイプ名
+        'singular_name' => 'カフェいメニュー',
+        'all_items' => 'メニュー一覧',
+      ),
+      'public' => true,
+      'menu_position' => 5,
+      'menu_icon' => 'dashicons-coffee',
+      'supports' => array('title', 'editor', 'thumbnail'),
+      // 'taxonomies' => array('cafe_menu_a', 'rental_tag')  //使用するタクソノミー
+    )
+  );
+
+  register_taxonomy(
+    'cafe_menu_a',
+    'cafe_menu',
+    array(
+      'hierarchical' => true,
+      'label' => 'レンタルカテゴリー',  //カスタムタクソノミーのラベル
+      'labels' => array( / 表示させる文字 /
+        'name' => 'カテゴリ',
+        'singular_name' => 'カテゴリ',
+        'search_items' =>  'カテゴリを検索',
+        'all_items' => 'すべてのカテゴリ',
+        'parent_item' => '親分類',
+        'parent_item_colon' => '親分類：',
+        'edit_item' => '編集',
+        'update_item' => '更新',
+        'add_new_item' => 'カテゴリを追加',
+        'new_item_name' => '名前',
+      ),
+      'show_ui' => true, / 管理画面にメニューを作る /
+      'rewrite' => array(
+        'slug' => 'cafe_menu', 'with_front' => true, 'hierarchical' => true
+      )
+    )
+  );
+}
