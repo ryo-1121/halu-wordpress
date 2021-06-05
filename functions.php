@@ -18,7 +18,7 @@ function sample_widgets()
 }
 add_action('widgets_init', 'sample_widgets');
 
-/ カスタム投稿タイプの追加
+// カスタム投稿タイプの追加
 add_action('init', 'create_post_type');
 function create_post_type()
 {
@@ -44,7 +44,7 @@ function create_post_type()
     array(
       'hierarchical' => true,
       'label' => 'レンタルカテゴリー',  //カスタムタクソノミーのラベル
-      'labels' => array( / 表示させる文字 /
+      'labels' => array( // 表示させる文字 
         'name' => 'カテゴリ',
         'singular_name' => 'カテゴリ',
         'search_items' =>  'カテゴリを検索',
@@ -56,7 +56,7 @@ function create_post_type()
         'add_new_item' => 'カテゴリを追加',
         'new_item_name' => '名前',
       ),
-      'show_ui' => true, / 管理画面にメニューを作る /
+      'show_ui' => true, // 管理画面にメニューを作る
       'rewrite' => array(
         'slug' => 'cafe_menu', 'with_front' => true, 'hierarchical' => true
       )
