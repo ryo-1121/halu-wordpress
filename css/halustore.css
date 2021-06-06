@@ -1149,6 +1149,7 @@ footer {
 .ubereats {
     width: 100%;
     margin-top: 15%;
+    display: none;
 }
 
 @media (min-width:767px) {

@@ -35,17 +35,6 @@
   <div class="archive">
   <?php dynamic_sidebar('sidebar'); ?>
 
-    <!-- <div class="archive_dropdown">
-      <h3>アーカイブ</h3>
-      <select name="archive_select" id="">
-        <option value="1">月を選択</option>
-        <option value="2">2021年5月</option>
-        <option value="3">2021年4月</option>
-        <option value="4">2021年3月</option>
-        <option value="5">2021年2月</option>
-        <option value="6">2021年1月</option>
-      </select>
-    </div> -->
     <div class="adsense_short">
       <img src="<?php echo get_template_directory_uri() ?>/image/blog2.jpg" alt="">
     </div>

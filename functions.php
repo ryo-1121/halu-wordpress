@@ -27,23 +27,22 @@ function create_post_type()
     array(
       'labels' => array(
         'name' => 'カフェメニュー', // 表示する投稿タイプ名
-        'singular_name' => 'カフェいメニュー',
+        'singular_name' => 'カフェメニュー',
         'all_items' => 'メニュー一覧',
       ),
       'public' => true,
       'menu_position' => 5,
       'menu_icon' => 'dashicons-coffee',
-      'supports' => array('title', 'editor', 'thumbnail'),
-      // 'taxonomies' => array('cafe_menu_a', 'rental_tag')  //使用するタクソノミー
+      'supports' => array('title', 'editor', 'thumbnail', 'custom-fields'
+    ),
     )
   );
 
   register_taxonomy(
-    'cafe_menu_a',
+    'cafe_menu_taxonomy',
     'cafe_menu',
     array(
       'hierarchical' => true,
-      'label' => 'レンタルカテゴリー',  //カスタムタクソノミーのラベル
       'labels' => array( // 表示させる文字 
         'name' => 'カテゴリ',
         'singular_name' => 'カテゴリ',
