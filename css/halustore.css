@@ -1254,7 +1254,6 @@ footer {
 
 @media (min-width:767px) {
     #perspective {
-        position: fixed;
         top: 350px;
         left: 50%;
         margin-left: -200px;
@@ -1264,9 +1263,8 @@ footer {
 
 #container {
     box-shadow: 0px 2px 10px #1a1a1a;
-    position: relative;
-    width: 330px;
-    height: 230px;
+    width: 345px;
+    height: 225px;
     transform-style: preserve-3d;
     z-index: -6;
     -webkit-border-radius: 5px;
@@ -1275,12 +1273,12 @@ footer {
     -o-border-radius: 5px;
     border-radius: 5px;
     transform: rotate(3deg);
+    margin: 0 auto;
 }
 
 @media (min-width:767px) {
     #container {
         box-shadow: 0px 2px 10px #1a1a1a;
-        position: relative;
         width: 400px;
         height: 280px;
         transform-style: preserve-3d;
@@ -1408,7 +1406,8 @@ footer {
     border-bottom: 140px solid transparent;
 }
 
-.button {
+.button,
+.wpcf7-submit {
     -webkit-border-radius: 8px;
     -moz-border-radius: 8px;
     -ms-border-radius: 8px;
@@ -1418,7 +1417,6 @@ footer {
     height: auto;
     padding: 0 1em;
     border-bottom: 4px solid #007B40;
-    ;
     position: relative;
     z-index: 11;
     -webkit-transition: none;
@@ -1469,8 +1467,8 @@ footer {
     position: absolute;
     top: 3px;
     left: 0;
-    margin: 0 0 0 5px;
-    width: 390px;
+    margin: 10px 0 0 5px;
+    width: 100%;
     height: 200px;
     overflow: hidden;
     z-index: 1;
@@ -1495,38 +1493,36 @@ footer {
     text-shadow: 0px 1px 1px white;
 }
 
-
-/*#letter p{
-  color: hsla(0,0%,20%,1);
-  text-shadow: 0px 1px 1px hsla(0,0%,100%,1); 
-  font-size: 0.85em;
-  line-height:1.45em;
-  margin: 30px 50px 0 50px;
+#letter p {
+    color: hsla(0, 0%, 20%, 1);
+    text-shadow: 0px 1px 1px hsla(0, 0%, 100%, 1);
+    font-size: 0.85em;
+    line-height: 1.2em;
+    margin: 0 5% 0 5%;
 }
 
-#letter p:first-letter{
-  color: hsla(0,63%,57%,1);
-  text-shadow: 0px 2px 1px hsla(0,0%,100%,1);
-  font-size: 2.5em;
-  float: left;
-  line-height:0em;
-  padding:10px 10px 0 0;
-}*/
+
+/* #letter p:first-letter {
+    color: hsla(0, 63%, 57%, 1);
+    text-shadow: 0px 2px 1px hsla(0, 0%, 100%, 1);
+    font-size: 2.5em;
+    float: left;
+    line-height: 0em;
+    padding: 10px 10px 0 0;
+} */
 
 form {
     margin-left: auto;
     margin-right: auto;
-    width: 350px;
+    width: 100%;
     height: 900px;
-    padding: 30px;
     border-radius: 10px;
     overflow: hidden;
     position: relative;
 }
 
 textarea {
-    width: 300px;
-    max-width: 95%;
+    width: 100%;
     min-height: 110px;
     max-height: 10%;
     border-radius: 10px;
@@ -1567,8 +1563,24 @@ select {
 }
 
 .nameinput,
-.emailinput {
-    width: 300px;
+.emailinput,
+.wpcf7-text {
+    width: 90%;
+    height: 40px;
+    border-radius: 10px;
+    background-clip: padding-box;
+    display: block;
+    font-family: "Lato", sans-serif;
+    font-size: 18px;
+    color: #fff;
+    margin-bottom: 15%;
+    border: 1px solid #B4BDCF;
+    background: #D4E1FC;
+    box-shadow: inset 0 0 7px #A2AABA, 0 -3px 3px #b9b9b5, 0 4px 4px #f4f4f4;
+}
+
+.contact_name {
+    width: 90%;
     height: 40px;
     border-radius: 10px;
     background-clip: padding-box;

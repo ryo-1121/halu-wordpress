@@ -13,6 +13,8 @@ Template Name: コンタクト
 <div class="main_container">
     <div class="contactform_main">
 
+    
+
     <div id="perspective">
         <div id="container">
             <div class="face front">
@@ -27,10 +29,10 @@ Template Name: コンタクト
                 <div id="letter">
                     <hgroup>
                         <h1 id="info">TEL:090-3669-4700</h1>
-                        <h2>---- or ----</h2>
                     </hgroup>
-                    <p>
+                    
 
+                    <?php echo do_shortcode('[contact-form-7 id="58" title="問い合わせ"]') ?>
                     <form action="" method="post" novalidate="novalidate" id="myform">
 
                         <span class="Name">
@@ -56,7 +58,6 @@ Template Name: コンタクト
                         <input type="submit" value="Send" class="button send">
 
                     </form>
-                    </p>
                 </div>
             </div>
         </div>
