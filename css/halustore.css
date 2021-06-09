@@ -295,13 +295,13 @@ footer {
 }
 
 .footer_logo {
-    width: 200px;
+    width: 180px;
     margin: 0 auto;
 }
 
 @media (min-width:767px) {
     .footer_logo {
-        width: 300px;
+        width: 250px;
         margin: 0 auto;
     }
 }
@@ -317,7 +317,7 @@ footer {
     color: #000;
     font-weight: bold;
     font-family: toppan-bunkyu-midashi-go-std, sans-serif;
-    font-size: 15px;
+    font-size: 13px;
     text-shadow: 0 0 5px #888;
 }
 
@@ -328,7 +328,7 @@ footer {
         color: #000;
         font-weight: bold;
         font-family: toppan-bunkyu-midashi-go-std, sans-serif;
-        font-size: 20px;
+        font-size: 18px;
         text-shadow: 0 0 5px #888;
     }
 }
@@ -338,7 +338,7 @@ footer {
     color: #000;
     font-weight: bold;
     font-family: toppan-bunkyu-midashi-go-std, sans-serif;
-    font-size: 15px;
+    font-size: 13px;
     text-shadow: 0 0 5px #888;
 }
 
@@ -348,7 +348,7 @@ footer {
         color: #000;
         font-weight: bold;
         font-family: toppan-bunkyu-midashi-go-std, sans-serif;
-        font-size: 20px;
+        font-size: 18px;
         text-shadow: 0 0 5px #888;
     }
 }
@@ -358,7 +358,7 @@ footer {
     text-align: center;
     font-weight: bold;
     font-family: toppan-bunkyu-midashi-go-std, sans-serif;
-    font-size: 15px;
+    font-size: 13px;
     text-shadow: 0 0 5px #888;
 }
 
@@ -372,7 +372,7 @@ footer {
         text-align: center;
         font-weight: bold;
         font-family: toppan-bunkyu-midashi-go-std, sans-serif;
-        font-size: 20px;
+        font-size: 18px;
         text-shadow: 0 0 5px #888;
     }
 }
@@ -382,7 +382,7 @@ footer {
     color: #000;
     font-weight: bold;
     font-family: toppan-bunkyu-midashi-go-std, sans-serif;
-    font-size: 15px;
+    font-size: 13px;
     text-shadow: 0 0 5px #888;
 }
 
@@ -396,8 +396,34 @@ footer {
         color: #000;
         font-weight: bold;
         font-family: toppan-bunkyu-midashi-go-std, sans-serif;
-        font-size: 20px;
+        font-size: 18px;
         text-shadow: 0 0 5px #888;
+    }
+}
+
+.copyright {
+    display: block;
+    text-align: center;
+    margin-top: 2%;
+}
+
+@media (min-width:767px) {
+    .copyright {
+        display: block;
+        text-align: center;
+        margin-top: 1%;
+    }
+}
+
+.copyright a {
+    color: #000;
+    margin-left: 5%;
+}
+
+@media (min-width:767px) {
+    .copyright a {
+        color: #000;
+        margin-left: 5%;
     }
 }
 
