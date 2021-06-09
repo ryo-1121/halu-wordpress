@@ -24,7 +24,7 @@
       'post_type' => 'post',
       'paged' => $paged,
       'post_status' => 'publish',
-      'posts_per_page' => 5,
+      'posts_per_page' => 12,
     ));
     if ($information->have_posts()) :
     ?>
