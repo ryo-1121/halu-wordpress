@@ -1249,7 +1249,7 @@ footer {
 }
 
 .contactform_main {
-    margin: 0% 0 95% 0;
+    margin: 0% 0 800px 0;
 }
 
 @media (min-width:767px) {
@@ -2077,4 +2077,91 @@ textarea {
 
 .blogarchive_list_cont a {
     color: #252525;
+}
+
+
+/* ---------------------------------------プライバシーポリシー--------------------------------------*/
+
+.privacy_Policy {
+    width: 100%;
+    padding: 5%;
+    margin: 0 auto;
+    margin-top: 10%;
+    background-color: rgba(0, 123, 64, 0.3);
+}
+
+@media (min-width:767px) {
+    .privacy_Policy {
+        width: 70%;
+        padding: 5%;
+        margin: 0 auto;
+        margin-top: 10%;
+        background-color: rgba(0, 123, 64, 0.2);
+    }
+}
+
+.privacy_policy_title {
+    text-align: center;
+    font-size: 5vw;
+    color: rgb(73, 73, 73);
+    font-weight: bold;
+}
+
+@media (min-width:767px) {
+    .privacy_policy_title {
+        text-align: center;
+        font-size: 2vw;
+        color: rgb(73, 73, 73);
+    }
+}
+
+.privacy_Policy h1 {
+    font-size: 4vw;
+    margin: 10% 0 2% 0;
+    color: rgb(73, 73, 73);
+    font-weight: bold;
+}
+
+@media (min-width:767px) {
+    .privacy_Policy h1 {
+        font-size: 23px;
+        margin: 5% 0 2% 0;
+        color: rgb(73, 73, 73);
+    }
+}
+
+
+/* ---------------------------------------免責事項--------------------------------------*/
+
+.disclaimer {
+    width: 100%;
+    padding: 5%;
+    margin: 0 auto;
+    margin-top: 10%;
+    background-color: rgba(0, 123, 64, 0.3);
+}
+
+@media (min-width:767px) {
+    .disclaimer {
+        width: 70%;
+        padding: 5%;
+        margin: 0 auto;
+        margin-top: 10%;
+        background-color: rgba(0, 123, 64, 0.2);
+    }
+}
+
+.disclaimer_title {
+    text-align: center;
+    font-size: 5vw;
+    color: rgb(73, 73, 73);
+    font-weight: bold;
+}
+
+@media (min-width:767px) {
+    .disclaimer_title {
+        text-align: center;
+        font-size: 2vw;
+        color: rgb(73, 73, 73);
+    }
 }

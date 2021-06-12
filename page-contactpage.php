@@ -12,58 +12,56 @@ Template Name: コンタクト
 
 <div class="main_container">
     <div class="contactform_main">
-
-    
-
-    <div id="perspective">
-        <div id="container">
-            <div class="face front">
-                <div id="white">
-                    <h1>Contact Me!<br><span>--------</span></h1>
+        <div id="perspective">
+            <div id="container">
+                <div class="face front">
+                    <div id="white">
+                        <h1>Contact Me!<br><span>--------</span></h1>
+                    </div>
                 </div>
-            </div>
-            <div class="face back">
-                <div id="open"></div>
-                <div id="folds"></div>
-                <div class="button con">contact form</div>
-                <div id="letter">
-                    <hgroup>
-                        <h1 id="info">TEL:090-3669-4700</h1>
-                    </hgroup>
-                    
+                <div class="face back">
+                    <div id="open"></div>
+                    <div id="folds"></div>
+                    <div class="button con">contact form</div>
+                    <div id="letter">
+                        <hgroup>
+                            <h1 id="info">TEL:090-3669-4700</h1>
+                        </hgroup>
 
-                    <?php echo do_shortcode('[contact-form-7 id="58" title="問い合わせ"]') ?>
-                    <form action="" method="post" novalidate="novalidate" id="myform">
 
-                        <span class="Name">
-                            <input type="text" name="Name" value="" size="40" class="nameinput" aria-required="true" aria-invalid="false" placeholder="Name">
-                        </span>
+                        <?php echo do_shortcode('[contact-form-7 id="58" title="問い合わせ"]') ?>
+                        <form action="" method="post" novalidate="novalidate" id="myform">
 
-                        <span class="Email">
-                            <input type="email" name="Email" size="40" class="emailinput" aria-required="true" aria-invalid="false" placeholder="Email">
-                        </span>
+                            <span class="Name">
+                                <input type="text" name="Name" value="" size="40" class="nameinput" aria-required="true" aria-invalid="false" placeholder="Name">
+                            </span>
 
-                        <span class="Subject">
-                            <select name="Subject" class="indent" aria-required="true" aria-invalid="false">
-                                <option value="None">Subject</option>
-                                <option value="Job">Job Information</option>
-                                <option value="Booking">Booking</option>
-                            </select>
-                        </span>
+                            <span class="Email">
+                                <input type="email" name="Email" size="40" class="emailinput" aria-required="true" aria-invalid="false" placeholder="Email">
+                            </span>
 
-                        <span class="Message">
-                            <textarea name="Message" cols="40" rows="10" aria-invalid="false" placeholder="Message"></textarea>
-                        </span>
+                            <span class="Subject">
+                                <select name="Subject" class="indent" aria-required="true" aria-invalid="false">
+                                    <option value="None">Subject</option>
+                                    <option value="Job">Job Information</option>
+                                    <option value="Booking">Booking</option>
+                                </select>
+                            </span>
 
-                        <input type="submit" value="Send" class="button send">
+                            <span class="Message">
+                                <textarea name="Message" cols="40" rows="10" aria-invalid="false" placeholder="Message"></textarea>
+                            </span>
 
-                    </form>
+                            <input type="submit" value="Send" class="button send">
+
+                        </form>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
     <div id="wrapper"></div>
-    </div>
+</div>
 </div>
 
 

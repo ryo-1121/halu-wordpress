@@ -19,8 +19,8 @@
   </div>
   <div class="copyright">
   <small>&copy;2021 HALU STORE</small>
-  <small><a href="">プライバシーポリシー</a></small>
-  <small><a href="">免責事項</a></small>
+  <small><a href="Privacy-Policy">プライバシーポリシー</a></small>
+  <small><a href="disclaimer">免責事項</a></small>
   </div>
 
 </footer>
