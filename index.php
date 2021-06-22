@@ -19,13 +19,13 @@ Template Name: トップページ
         </a></label>
     </div>
     <div class="circle_menu text-center rounded-circle">
-      <label><a href="cafe-menu">
-          <p>cafe menu</p>
+      <label><a href="/cafe-menu">
+          <p>CAFE MENU</p>
         </a></label>
     </div>
     <div class="circle_menu text-center rounded-circle">
-      <label><a href="#">
-          <p>fashion</p>
+      <label><a href="/fashion">
+          <p>FASHION</p>
         </a></label>
     </div>
   </div>

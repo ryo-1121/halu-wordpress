@@ -40,15 +40,13 @@
             </div>
 
             <nav class="globalMenuSp">
-                <ul>
-                    <li><a href="top">TOP</a></li>
-                    <li><a href="cafe-menu">CAFE MENU</a></li>
-                    <li><a href="blogarchive">BLOG</a></li>
-                    <li><a href="fashion">FASHION</a></li>
-                    <li><a href="access">ACCESS</a></li>
-                    <li><a href="contact">CONTACT</a></li>
-                </ul>
+                <?php
+                wp_nav_menu(array(
+                    'theme_location' => 'main-menu'
+                ));
+                ?>
             </nav>
+
         </div>
         <div class="head_logo"><img src="<?php echo get_template_directory_uri() ?>/image/logo.png" alt=""></div>
     </header>

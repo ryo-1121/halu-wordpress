@@ -7,11 +7,6 @@
   <div class="street_address">
     <p>福岡県筑紫野市原 166-25</p>
   </div>
-  <div class="phone_number">
-    <a href="tel:090-3669-4700">
-      <p>090-3669-4700</p>
-    </a>
-  </div>
   <div class="inquiry">
     <a href="contact">
       <p></p>お問い合わせ</p>

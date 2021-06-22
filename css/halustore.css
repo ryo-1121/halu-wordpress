@@ -224,7 +224,7 @@ nav.globalMenuSp ul li {
     width: 100%;
     transition: .4s all;
     justify-content: space-between;
-    font-family: toppan-bunkyu-midashi-go-std, sans-serif;
+    font-family: Century Gothic, sans-serif;
 }
 
 nav.globalMenuSp ul li:last-child {
@@ -476,9 +476,9 @@ footer {
 }
 
 .circle_menu p {
-    font-family: swister, sans-serif;
+    font-family: Century Gothic, sans-serif;
     color: #007B40;
-    font-size: 28px;
+    font-size: 25px;
     text-shadow: 0 0 5px #888;
 }
 
@@ -602,7 +602,7 @@ footer {
 .blog_title {
     color: #111;
     text-align: center;
-    font-family: swister, sans-serif;
+    font-family: Century Gothic, sans-serif;
     font-size: 50px;
     line-height: 1;
     width: 40%;
@@ -613,7 +613,7 @@ footer {
 @media (min-width:767px) {
     .blog_title {
         color: #111;
-        font-family: swister, sans-serif;
+        font-family: Century Gothic, sans-serif;
         font-size: 50px;
         line-height: 1;
         width: 30%;
@@ -1986,6 +1986,10 @@ textarea {
     }
 }
 
+.screen-reader-text {
+    display: none;
+}
+
 
 /* ---------------------------------------blog アーカイブTOP--------------------------------------*/
 
@@ -2038,6 +2042,7 @@ textarea {
 .blogarchive_list_cont_list img {
     display: block;
     width: 48%;
+    height: 40%;
     margin: 0 auto;
     margin-top: 13%;
     -webkit-transform: rotate(10deg) scale(1);
