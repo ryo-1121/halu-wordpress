@@ -1,6 +1,6 @@
 <!-------------------------------- フッター ----------------------------------->
 <footer>
-  <div class="footer_logo"><img src="<?php echo get_template_directory_uri() ?>/image/HALU_LOGO_black.svg" alt=""></div>
+  <div class="footer_logo"><img src="<?php echo get_template_directory_uri() ?>/image/halu_maru.svg" alt=""></div>
   <div class="postalcode">
     <p>〒818-0005</p>
   </div>

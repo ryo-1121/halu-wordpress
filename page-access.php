@@ -8,7 +8,7 @@ Template Name: アクセスページ
 
     <!-------------------------------- アクセスページトップ ----------------------------------->
     <div class="accesspage_title">
-        <p>Access</p>
+        <p>ACCESS</p>
     </div>
 
     <!-------------------------------- バックグラウンド ----------------------------------->
@@ -17,15 +17,18 @@ Template Name: アクセスページ
 
         <!-------------------------------- アクセスページ店舗案内 ----------------------------------->
         <div class="accesspage_cont">
-            <img clas="accesspage_pic col-md-7" src="<?php echo get_template_directory_uri() ?>/image/access_image.jpg" alt="">
+        <div class="accesspage_image col-md-7">
+            <img clas="accesspage_pic" src="<?php echo get_template_directory_uri() ?>/image/access.jpg" alt="">
+            </div>
             <div class="accesspage_overview col-md-5">
-                <p class="number_shats">座席数30席(Wi-fi有り)</p>
+                <p class="number_shats">座席数16席</p>
                 <p class="accesspage_street_address">福岡県筑紫野市原 166-25</p>
-                <a href="tel:090-3669-4700">
+                <p class="accesspage_street_address">駐車場有り(店前3台・向かい側2台)</p>
+                <!-- <a href="tel:090-3669-4700">
                     <p class="accesspage_phonenumber">電話番号:090-3669-4700</p>
-                </a>
+                </a> -->
                 <p class="accesspage_buisinesshours">営業時間:11:00～19:00</p>
-                <img class="mapimage" src="<?php echo get_template_directory_uri() ?>/image/mapimage.svg" alt="">
+                <img class="mapimage" src="<?php echo get_template_directory_uri() ?>/image/halumap.jpg" alt="">
             </div>
         </div>
 

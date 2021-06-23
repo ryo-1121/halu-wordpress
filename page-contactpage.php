@@ -25,7 +25,7 @@ Template Name: コンタクト
                     <div class="button con">contact form</div>
                     <div id="letter">
                         <hgroup>
-                            <h1 id="info">TEL:090-3669-4700</h1>
+                            <!-- <h1 id="info">TEL:090-3669-4700</h1> -->
                         </hgroup>
 
 
