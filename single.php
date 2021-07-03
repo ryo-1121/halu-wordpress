@@ -36,10 +36,10 @@
   <?php dynamic_sidebar('sidebar'); ?>
 
     <div class="adsense_short">
-      <img src="<?php echo get_template_directory_uri() ?>/image/blog2.jpg" alt="">
+      <!-- <img src="<?php echo get_template_directory_uri() ?>/image/blog2.jpg" alt=""> -->
     </div>
     <div class="adsense_long">
-      <img src="<?php echo get_template_directory_uri() ?>/image/BLOG1.png" alt="">
+      <!-- <img src="<?php echo get_template_directory_uri() ?>/image/BLOG1.png" alt=""> -->
     </div>
 
   </div>

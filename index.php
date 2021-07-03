@@ -14,7 +14,7 @@ Template Name: トップページ
   <!-------------------------------- サークルメニュー ----------------------------------->
   <div class="circle">
     <div class="circle_menu text-center rounded-circle">
-      <label><a href="#">
+      <label><a href="/Concept-page">
           <p>HALU STORE</p>
         </a></label>
     </div>
@@ -42,7 +42,7 @@ Template Name: トップページ
     <div class="blog">
       <div class="blog_title">BLOG</div>
       <div class="blog_article">
-      <?php
+        <?php
         $args = array(
           'numberposts'  => 9
         );
@@ -67,7 +67,7 @@ Template Name: トップページ
         }
         echo $output;
         ?>
-        
+
       </div>
     </div>
 
@@ -99,6 +99,8 @@ Template Name: トップページ
 
   ScrollReveal().reveal('.circle_menu', {
     duration: 1700, // アニメーションの完了にかかる時間
+    distance: '350px', //動きの幅
+    origin: 'bottom', //アニメーションの開始位置
     viewFactor: 0.2, // 0~1,どれくらい見えたら実行するか
     reset: true // 何回もアニメーション表示するか
   });
