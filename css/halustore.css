@@ -588,7 +588,7 @@ footer {
 
 .instagram_picture {
     border: solid 5px #bdbdb5;
-    width: 350px;
+    width: 90%;
     height: 440px;
     margin: 0 auto;
     margin-top: 3%;
@@ -599,8 +599,8 @@ footer {
 @media (min-width:767px) {
     .instagram_picture {
         border: solid 5px #bdbdb5;
-        width: 400px;
-        height: 480px;
+        width: 80%;
+        height: 37vw;
         margin: 0 auto;
         margin-top: 0;
         margin-bottom: 0;
@@ -629,7 +629,7 @@ footer {
     color: #111;
     text-align: center;
     font-family: Century Gothic, sans-serif;
-    font-size: 50px;
+    font-size: 40px;
     line-height: 1;
     width: 40%;
     margin: 0 auto;
@@ -640,7 +640,7 @@ footer {
     .blog_title {
         color: #111;
         font-family: Century Gothic, sans-serif;
-        font-size: 50px;
+        font-size: 3.5vw;
         line-height: 1;
         width: 30%;
         margin: 0 auto;
@@ -650,7 +650,7 @@ footer {
 
 .blog_article {
     border: solid 5px #bdbdb5;
-    width: 350px;
+    width: 90%;
     height: 440px;
     margin: 0 auto;
     margin-bottom: 3%;
@@ -660,8 +660,8 @@ footer {
 @media (min-width:767px) {
     .blog_article {
         border: solid 5px #bdbdb5;
-        width: 400px;
-        height: 480px;
+        width: 80%;
+        height: 37vw;
         margin: 0 auto;
         margin-bottom: 0;
         border-radius: 10px 60px/50px 10px;
@@ -796,6 +796,7 @@ footer {
     width: 100%;
     height: 65%;
     text-align: center;
+    border-radius: 8px;
 }
 
 .pickup_menu_right {
@@ -805,7 +806,7 @@ footer {
     width: 84.81vw;
     height: 60vw;
     margin: 0 auto;
-    margin-top: -3%;
+    margin-top: -30%;
     text-shadow: 0 0 5px #888;
 }
 
@@ -907,6 +908,9 @@ footer {
 
 .menu_drink_list_box img {
     width: 100%;
+    padding: 5% 5% 5% 5%;
+    border-radius: 20px;
+    box-shadow: 10px 15px 10px rgba(175, 175, 175, 0.815);
 }
 
 .drink_name {
@@ -972,6 +976,9 @@ footer {
 
 .menu_food_list_box img {
     width: 100%;
+    padding: 5% 5% 5% 5%;
+    border-radius: 20px;
+    box-shadow: 10px 15px 10px rgba(175, 175, 175, 0.815);
 }
 
 .food_name {
@@ -2213,6 +2220,24 @@ textarea {
 
 
 /* ---------------------------------------コンセプトページ--------------------------------------*/
+
+#conceptpage {
+    width: 95%;
+    background-color: #fafafad7;
+    margin-top: 3%;
+    padding: 1% 0 3% 0;
+    border-radius: 5%;
+}
+
+@media (min-width:767px) {
+    #conceptpage {
+        width: 80%;
+        background-color: #fafafad7;
+        margin-top: 3%;
+        padding: 1% 0 3% 0;
+        border-radius: 5%;
+    }
+}
 
 .conceptpage_title {
     font-family: Century Gothic, sans-serif;

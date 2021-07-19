@@ -72,3 +72,4 @@ function register_my_menus() {
   ) );
 }
 add_action( 'after_setup_theme', 'register_my_menus' );
+add_filter( 'big_image_size_threshold', '__return_false' );

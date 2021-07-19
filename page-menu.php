@@ -193,20 +193,20 @@ Template Name: メニュー
     });
 
     ScrollReveal().reveal('.pickup_menu', {
-        duration: 1500, // アニメーションの完了にかかる時間
-        viewFactor: 0.4, // 0~1,どれくらい見えたら実行するか
+        duration: 3000, // アニメーションの完了にかかる時間
+        viewFactor: 0.2, // 0~1,どれくらい見えたら実行するか
         reset: true // 何回もアニメーション表示するか
     });
 
     ScrollReveal().reveal('.menu_drink_list_box', {
-        duration: 1500, // アニメーションの完了にかかる時間
-        viewFactor: 0.4, // 0~1,どれくらい見えたら実行するか
+        duration: 5000, // アニメーションの完了にかかる時間
+        viewFactor: 0.2, // 0~1,どれくらい見えたら実行するか
         reset: true // 何回もアニメーション表示するか
     });
 
     ScrollReveal().reveal('.menu_food_list_box', {
-        duration: 1500, // アニメーションの完了にかかる時間
-        viewFactor: 0.4, // 0~1,どれくらい見えたら実行するか
+        duration: 5000, // アニメーションの完了にかかる時間
+        viewFactor: 0.2, // 0~1,どれくらい見えたら実行するか
         reset: true // 何回もアニメーション表示するか
     });
 </script>
