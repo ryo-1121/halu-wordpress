@@ -18,7 +18,7 @@
     <meta property="og:url" content="https://halu-store.com/" />
     <meta property="og:type" content="website" />
     <meta property="og:title" content="HALU-STORE" />
-    <meta property="og:description" content="スペシャリティーコーヒーやホットドッグやちょっとしたおやつ&お洋服・雑貨も楽しめるお店です。" />
+    <meta property="og:description" content="コーヒーやホットドッグやちょっとしたおやつ&お洋服・雑貨も楽しめるお店です。" />
     <meta property="og:site_name" content="HALU-STORE" />
     <meta property="og:image" content="<?php echo get_template_directory_uri() ?>/image/logo.png" />F
 
@@ -43,6 +43,16 @@
     <?php wp_head(); ?>
 
     <title>HALU STORE</title>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-7NE8DN9J64"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-7NE8DN9J64');
+</script>
 </head>
 
 
