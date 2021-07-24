@@ -20,7 +20,7 @@
     <meta property="og:title" content="HALU-STORE" />
     <meta property="og:description" content="コーヒーやホットドッグやちょっとしたおやつ&お洋服・雑貨も楽しめるお店です。" />
     <meta property="og:site_name" content="HALU-STORE" />
-    <meta property="og:image" content="<?php echo get_template_directory_uri() ?>/image/logo.png" />F
+    <meta property="og:image" content="<?php echo get_template_directory_uri() ?>/image/halu_marulogo.png" />
 
     <!-- css -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.7/css/font-awesome.min.css">
