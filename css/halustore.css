@@ -2099,11 +2099,11 @@ textarea {
 }
 
 .blogarchive_list_title {
-    margin: 10% 0 0 18%;
+    margin: 10% 0 0 19%;
     font-family: toppan-bunkyu-midashi-go-std, sans-serif;
     font-size: 3.5vw;
     text-align: center;
-    width: 67%;
+    width: 65%;
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden;
