@@ -2099,7 +2099,7 @@ textarea {
 }
 
 .blogarchive_list_title {
-    margin: 10% 0 0 0;
+    margin: 10% 0 0 5%;
     font-family: toppan-bunkyu-midashi-go-std, sans-serif;
     font-size: 3.5vw;
     text-align: center;
@@ -2111,7 +2111,7 @@ textarea {
 
 @media (min-width:767px) {
     .blogarchive_list_title {
-        margin: 11% 0 0 0%;
+        margin: 11% 0 0 5%;
         font-family: toppan-bunkyu-midashi-go-std, sans-serif;
         font-size: 1.3vw;
         text-align: center;
