@@ -2099,11 +2099,11 @@ textarea {
 }
 
 .blogarchive_list_title {
-    margin: 10% 0 0 5%;
+    margin: 10% 0 0 15%;
     font-family: toppan-bunkyu-midashi-go-std, sans-serif;
     font-size: 3.5vw;
     text-align: center;
-    width: 85%;
+    width: 70%;
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden;
@@ -2111,11 +2111,11 @@ textarea {
 
 @media (min-width:767px) {
     .blogarchive_list_title {
-        margin: 11% 0 0 5%;
+        margin: 11% 0 0 20%;
         font-family: toppan-bunkyu-midashi-go-std, sans-serif;
         font-size: 1.3vw;
         text-align: center;
-        width: 85%;
+        width: 60%;
         white-space: nowrap;
         text-overflow: ellipsis;
         overflow: hidden;
