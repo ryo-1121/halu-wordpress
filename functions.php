@@ -73,3 +73,14 @@ function register_my_menus() {
 }
 add_action( 'after_setup_theme', 'register_my_menus' );
 add_filter( 'big_image_size_threshold', '__return_false' );
+
+//add SVG to allowed file uploads
+function add_file_types_to_uploads($file_types){
+
+  $new_filetypes = array();
+  $new_filetypes['svg'] = 'image/svg+xml';
+  $file_types = array_merge($file_types, $new_filetypes );
+
+  return $file_types;
+}
+add_action('upload_mimes', 'add_file_types_to_uploads');
