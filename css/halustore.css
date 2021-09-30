@@ -98,13 +98,14 @@ p {
 
 @media (min-width:767px) {
     .head {
+        position: fixed;
         top: 0;
     }
 }
 
 @media (min-width:767px) {
     .change-color {
-        background-color: rgba(255, 255, 255, 0.589);
+        background-color: rgba(255, 255, 255, 0.6);
         /* （画像よりも下までスクロールした時に変えたい文字色） */
     }
 }
