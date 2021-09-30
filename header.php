@@ -66,6 +66,7 @@
     <!------------------------------- ヘッダー -------------------------------------->
     <header>
         <div class="head w-100" id="js-mainVisual">
+            <div class="hamburger_logo"><a href="top"><img src="<?php echo get_template_directory_uri() ?>/image/halu_marulogo.png" alt=""></a></div>
             <div class="hamburger">
                 <span></span>
                 <span></span>

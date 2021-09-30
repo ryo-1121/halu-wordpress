@@ -71,7 +71,7 @@ p {
 
 @media (min-width:767px) {
     .main_container {
-        width: 80%;
+        max-width: 1645px;
     }
 }
 
@@ -90,8 +90,8 @@ p {
 /* ----------------------------------ヘッダー ---------------------------------*/
 
 .head {
-    height: 55px;
-    position: fixed;
+    height: 75px;
+    position: relative;
     top: -120px;
     z-index: 100;
 }
@@ -109,6 +109,35 @@ p {
     }
 }
 
+.hamburger_logo {
+    position: fixed;
+    top: 0px;
+    z-index: 3;
+    width: 100%;
+    height: 75px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+@media (min-width:767px) {
+    .hamburger_logo {
+        display: none;
+        
+    }
+}
+
+.hamburger_logo img {
+    width: 65px;
+    margin: 0 auto;
+    padding-top: 7px;
+}
+
+@media (min-width:767px) {
+    .hamburger_logo img {
+        display: none;
+    }
+}
+
 /*　ハンバーガーボタン　*/
 
 .hamburger {
@@ -116,9 +145,9 @@ p {
     position: fixed;
     z-index: 3;
     right: 13px;
-    top: 3px;
-    width: 42px;
-    height: 42px;
+    top: 15px;
+    width: 43px;
+    height: 43px;
     cursor: pointer;
     text-align: center;
 }
@@ -194,8 +223,8 @@ p {
 }
 
 nav.globalMenuSp {
-    position: absolute;
-    top: -560px;
+    position: fixed;
+    top: -606px;
     left: 0;
     color: #fff;
     text-align: center;
@@ -209,6 +238,7 @@ nav.globalMenuSp {
 
 @media (min-width:767px) {
     nav.globalMenuSp {
+        position: absolute;
         top: 0;
         opacity: 1;
         display: block;
@@ -1501,7 +1531,7 @@ footer {
     content: "";
     position: absolute;
     top: -140px;
-    right: -220px;
+    right: -180px;
     width: 0;
     height: 0;
     border-right: 180px solid #e6e6e6;
