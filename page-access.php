@@ -27,7 +27,7 @@ Template Name: アクセスページ
             <!-- <a href="tel:090-3669-4700">
                     <p class="accesspage_phonenumber">電話番号:090-3669-4700</p>
                 </a> -->
-            <p class="accesspage_buisinesshours">営業時間:11:00～19:00</p>
+            <p class="accesspage_buisinesshours">営業時間:11:00～17:00</p>
             <img class="mapimage" src="<?php echo get_template_directory_uri() ?>/image/halumap.jpg" alt="">
         </div>
     </div>
